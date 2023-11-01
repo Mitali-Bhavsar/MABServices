@@ -1,0 +1,394 @@
+
+body{
+    line-height:30px;
+}
+.topbar{
+    background-color: rgb(90, 4, 4);
+}
+.logo img{
+    width: 245px;
+    height: 87px;
+}
+.topbar ul li{
+    display: inline;
+    list-style-type: none;
+    margin-left: 20px;
+}
+nav{
+    position: sticky;
+    position: -webkit-sticky;
+    top:0px;
+    z-index:10;
+   
+}
+.topbar ul a{
+    text-decoration: none;
+    color: white;
+}
+.topbar ul a:hover{
+    color: rgb(167, 162, 162);
+    text-shadow: 4px 8px 27px white;
+}
+.bg-color-nav{
+    background-color: rgb(116, 113, 113);
+}
+.bg-color-nav ul li{
+    padding-left:70px;
+}
+.bg-color-nav ul li a{
+color:#fff;
+}
+.bg-color-nav ul li a:hover{
+    color:rgb(90, 4, 4);
+}
+.bg-color-nav .logo{
+    display:none;
+}
+.top-footer{
+    background-color: rgb(137, 136, 136);
+    color:#faf9f9;
+}
+.top-footer .justify, .painting p{
+    text-align: justify;
+}
+.top-footer li a, .top-footer a
+{
+    color:#faf9f9;
+    text-decoration: none;
+}
+.top-footer ul li{
+    list-style-type: none;
+}
+.top-footer .half-title:after{
+    border: solid 2px transparent;
+    border-color: inherit;
+    content: '';
+    display: block;
+    height: 0;
+    margin-top: .75rem;
+    width: 6rem;
+}
+.bottom-footer{
+    background-color: rgb(105, 104, 104);
+    color:#fff;
+}
+.bottom-footer p span{
+    color:rgb(240, 166, 166);
+}
+.fullscreen-banner .carousel-inner img{
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 400px;
+    opacity: 1;
+    visibility: inherit;
+}
+.welcome{
+    background-color: rgba(234, 228, 228, 0.598);
+     width:100%;
+      height:70px;
+}
+.welcome marquee {
+    padding-top:17px;
+    font-size:30px;
+    color:rgb(90, 4, 4);
+}
+.welcome marquee p span{
+    margin-left:1in;
+}
+.welcome-main{
+    padding: 30px 0px;
+    background-color: #faf9f9;
+    color:black;
+}
+.welcome-main p{
+    text-align: justify;
+}
+.welcome-main h2 span, .services h2 span, .book-now h1 span,.whychoose h3,.whychoose h5,.enquiry h3 span, .painting h2 span,.services h3 span, .about-why-choose h3,.welcome-about h2 span{
+    color:rgb(139, 7, 7);
+}
+.welcome-main h2 , .services h2, .enquiry h3, .painting h2,.about-why-choose h3, .welcome-about h2{
+    text-align: center;
+}
+.services{
+    padding: 30px 0px;
+    background-color: #f4d1d1;
+}
+.services .service{
+    background-color: #fff;
+    width:300px;
+    height:250px;
+    text-align: center;
+}
+.services .service a{
+    text-decoration: none;
+    color:#000;
+}
+.services .service a:hover{
+
+    color:#a43030;
+}
+.services .bg-border{
+    width:320px;
+    height:270px;
+    margin-bottom: 40px;
+    /*-------image transform----------*/
+    --g: 4px;     /* the gap */
+    --b: 6px;    /* border thickness*/
+    --c: #a43030; /* the color */
+
+    padding: calc(var(--g) + var(--b));
+    --_c: #0000 0 25%, var(--c) 0 50%;
+    --_g1: repeating-linear-gradient(90deg ,var(--_c)) repeat-x;
+    --_g2: repeating-linear-gradient(180deg,var(--_c)) repeat-y;
+    background:
+    var(--_g1) var(--_p, 25%) 0   ,var(--_g2) 0    var(--_p,125%),
+    var(--_g1) var(--_p,125%) 100%,var(--_g2) 100% var(--_p, 25%);
+    background-size: 200% var(--b),var(--b) 200%;
+    cursor: pointer;
+    filter: grayscale(50%);
+    transition: .3s;
+}
+.services .service img{
+width:300px;
+height:200px;
+}
+.services .bg-border:hover {
+    --_p: 75%;
+    filter: grayscale(0%);
+    color:#a43030;
+  }
+.services .service h5{
+    padding: 10px 3px;
+}
+.card-body {
+    padding:0 !important;
+}
+.card {
+    border: 0px !important;
+    border-radius: 0px !important;
+}
+.book-now{
+    background-image: url(../images/image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    color:#fff;
+    padding: 30px 0px;
+    text-align: center;
+}
+.book-now p{
+    font-size: 50px;
+    font-weight: 300;
+     padding: 15px 0px;
+}
+.book-now h2{
+    font-size:45px;
+    font-weight:700;
+  color:rgb(139, 7, 7);
+}
+.book-now button a{
+    text-decoration: none;
+    color:#000;
+}
+.book-now a button:hover, .painting button:hover{
+background-color:rgb(139, 7, 7);
+color:#fff;
+}
+.whychoose p,.welcome-about p{
+    text-align: justify;
+}
+.enquiry{
+    background-color: #f4d1d1;
+    padding-top: 15px;
+    padding-bottom: 30px;
+}
+.enquiry img
+{
+    width: 460px;
+    height: 440px;
+    border-radius: 20px;
+    opacity: 0.5;
+}
+.enquiry button:hover, #enquiry button:hover{
+    background-color:rgb(139, 7, 7);
+    color:#fff;
+}
+.contactform{
+    background-color: #d7d2d2;
+    border-radius: 10px;
+    box-shadow: 2px 3px 2px 2px grey;
+}
+
+/* ---------Scroll to Top start---------------*/
+#back-to-up{
+    background-color: #424040;
+    color:#fff;
+    position:fixed;
+    bottom:90px;
+    right:0;
+    border-radius: 50%;;
+}
+#back-to-up:hover{
+    background-color: #a43030; 
+}
+  /*----------Scroll to Top end--------------*/
+  .aboutus{
+    background-image: url(../images/breadcrumb-image.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+  .aboutus ul li a, .aboutus h2{
+    color: #fff;
+    text-decoration: none;
+  }
+  .top-footer h5{
+    margin: 25px 0px;
+    color:#000;
+}
+.top-footer ul li i{
+    color:#000
+}
+.top-footer ul li a, .top-footer p a{
+    position: relative;
+    top: 0;
+    transition: top ease 0.5s;
+}
+.top-footer ul li a:hover, .top-footer p a:hover{
+    color:rgb(139, 7, 7);
+    top: -7px;
+}
+.painting{
+    padding: 30px 0px;
+}
+.painting .bg-painterimage img{
+    width:100%;
+    height:300px;
+    padding: 10px 0px;
+
+}
+.painting .painter-reg{
+    color:#424040
+}
+.about-why-choose {
+    background-color:#f4d1d1;
+}
+.about-why-choose .big-icon{
+    font-size: 25px;
+    padding-bottom: 20px;
+}
+.call-icon{
+    position:fixed;
+    top:85%;
+    right:16px;
+    z-index:10;
+}
+.call-icon img{
+    width:70px;
+    transform:rotate(-0deg);
+}
+/*---------10% shaking animation in home page start----------*/
+.book-now h2{
+    animation: 1s tilt-shaking infinite;
+}
+@keyframes tilt-shaking {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(5deg); }
+    50% { transform: rotate(0eg); }
+    75% { transform: rotate(-5deg); }
+    100% { transform: rotate(0deg); }
+  }
+  /*---------10% shaking animation in home page end----------*/
+  /*---------10% blowing animation in book service page start----------*/
+  #enquiry .lighting-text{
+    margin:150px 50px;
+
+  }
+  #enquiry h1 {
+    font-size: 4.3rem;    
+  }
+  
+  .neonText {
+    animation: flicker 1.5s infinite alternate;
+    color: #fff;
+  }
+ 
+  /* Flickering animation */
+  @keyframes flicker {
+      
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+  
+        text-shadow:
+        0 0 4px #fff,
+        0 0 11px #fff,
+        0 0 19px #fff,
+        0 0 40px rgb(139, 7, 7),
+        0 0 80px rgb(139, 7, 7),
+        0 0 90px rgb(139, 7, 7),
+        0 0 100px rgb(139, 7, 7),
+        0 0 150px rgb(139, 7, 7);
+    
+    }
+    
+    20%, 24%, 55% {        
+        text-shadow: none;
+    }    
+  }
+    /*---------10% blowing animation in book service page end----------*/
+  
+@media(max-width:650px){
+    .topbar{
+        display:none;
+    }
+    .navbar{
+        margin-left: 240px;
+    }
+    .logo img{
+        width: 100px;
+        height: 55px;
+    }  
+    .bg-color-nav .logo{
+        display: block;
+    } 
+    .bg-color-nav ul li{
+        padding-left:0px;
+    }
+    .enquiry img
+    {
+    width: 460px;
+    height: 608px;   
+    }
+    .services .bg-border{
+        width:320px;
+        height:270px;
+        margin: 40px auto;
+        display: block;
+    }
+    #enquiry .contactform{
+        width: 80%;
+        margin: 20px auto;
+    }
+}
+
+@media(min-width:650px)and(max-width:990px){
+    .enquiry img
+    {
+    width: 460px;
+    height: 608px;   
+    }
+    .services .service img{
+        width:50%;
+        height:auto;
+        }
+    .services .bg-border{
+        width:50%;
+        height:auto;
+        margin: 35px auto;
+        display: block;
+    }
+    #enquiry .contactform{
+        width: 80%;
+        margin: 20px auto;
+    }
+}
